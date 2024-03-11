@@ -338,7 +338,7 @@ main {
 
 .info-content .name {
   color: var(--white-2);
-  font-size: var(--fs-3);
+  font-size: var(--fs-4);
   font-weight: var(--fw-500);
   letter-spacing: -0.25px;
   margin-bottom: 10px;
@@ -517,9 +517,10 @@ main {
 .service-title { margin-bottom: 20px; }
 
 .service-list {
-  display: grid;
+  display: list;
   grid-template-columns: 1fr;
   gap: 20px;
+  padding: 10px;
 }
 
 .service-item {
