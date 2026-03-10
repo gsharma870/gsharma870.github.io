@@ -1,1262 +1,1031 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-        /* Styling for the button */
-        .resume-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #4CAF50; /* Green color */
-            color: white;
-            border-radius: 10px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
+  <meta name="description" content="Gyanendra Sharma, PhD — Senior HMI & UX Researcher specializing in automotive human factors, ADAS, psychophysics, and user-centered design. 7+ years, 9 publications, 3 patents.">
+  <meta name="keywords" content="UX Researcher, HMI Researcher, Automotive Human Factors, ADAS, Psychophysics, User Research, Eye Tracking, Driving Simulator">
+  <meta name="author" content="Gyanendra Sharma, PhD">
 
-        .resume-button:hover {
-            background-color: #45a049; /* Darker green on hover */
-        }
-    </style>
-  <title>Gyanendra Sharma</title>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Gyanendra Sharma, PhD | Senior HMI & UX Researcher">
+  <meta property="og:description" content="Senior HMI & UX Researcher specializing in automotive ADAS, psychophysics, and human-centered design.">
+  <meta property="og:type" content="website">
 
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <title>Gyanendra Sharma, PhD | Senior HMI &amp; UX Researcher</title>
 
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/logo.ico" type="image/x-icon">
 
-  <!--
-    - google font link
-  -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
 
-  <!--
-    - #MAIN
-  -->
+  <!-- ==================== NAVBAR ==================== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">GS</div>
+      <ul class="nav-links">
+        <li><a href="#about"        data-nav>About</a></li>
+        <li><a href="#experience"   data-nav>Experience</a></li>
+        <li><a href="#projects"     data-nav>Research</a></li>
+        <li><a href="#publications" data-nav>Publications</a></li>
+        <li><a href="#skills"       data-nav>Skills</a></li>
+        <li><a href="#contact"      data-nav>Contact</a></li>
+      </ul>
+      <a href="assets/resume/GSharma_Resume.pdf" target="_blank" class="btn-nav-resume">Resume ↗</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-  <main>
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="#about"        data-mobile-nav>About</a></li>
+      <li><a href="#experience"   data-mobile-nav>Experience</a></li>
+      <li><a href="#projects"     data-mobile-nav>Research</a></li>
+      <li><a href="#publications" data-mobile-nav>Publications</a></li>
+      <li><a href="#skills"       data-mobile-nav>Skills</a></li>
+      <li><a href="#contact"      data-mobile-nav>Contact</a></li>
+    </ul>
+    <a href="assets/resume/GSharma_Resume.pdf" target="_blank" class="btn-mobile-resume">Download Resume ↗</a>
+  </div>
+  <div class="nav-overlay" id="navOverlay"></div>
 
-    <!--
-      - #SIDEBAR
-    -->
 
-    <aside class="sidebar" data-sidebar>
+  <!-- ==================== HERO ==================== -->
+  <section id="hero">
+    <canvas id="particles-canvas"></canvas>
+    <div class="hero-glow"></div>
 
-      <div class="sidebar-info">
+    <div class="hero-layout container">
 
-        <figure class="avatar-box">
-          <img src="./assets/images/gsharma.jpg" alt="Gyanendra Sharma, PhD" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Gyanendra Sharma">Gyanendra Sharma, PhD</h1>
-
-          <p class="title">Sr. HMI Researcher, Audi of America</p>
+      <!-- Left: Text -->
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Senior HMI &amp; UX Researcher
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+        <h1 class="hero-name">
+          <span class="first">Gyanendra</span>
+          <span class="last">Sharma<span class="phd">&thinsp;PhD</span></span>
+        </h1>
 
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
+        <p class="hero-subtitle">
+          Advancing human-centered automotive research at the intersection of
+          HCI, psychophysics, and ADAS — translating complex user data into
+          safer, more intuitive vehicle systems.
+        </p>
 
-      </div>
-
-      <div class="sidebar-info_more">
-	  
-	  <div class="separator"></div>
-	  
-	  		<ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/gyanendrasharma70/" target="_blank" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://scholar.google.com/citations?hl=en&authuser=1&user=Sc_kZe4AAAAJ" target="_blank" class="social-link">
-			  <ion-icon name = "logo-google"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.instagram.com/g_yanens/" target="_blank" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
+        <div class="hero-metrics">
+          <div class="metric-item">
+            <div class="metric-value">
+              <span class="counter" data-target="7">0</span><span class="plus">+</span>
             </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:gyanendra.sharma870@gmail.com" class="contact-link">gyanendra.sharma870@gmail.com</a>
+            <div class="metric-label">Years Exp.</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-value">
+              <span class="counter" data-target="9">0</span>
             </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
+            <div class="metric-label">Publications</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-value">
+              <span class="counter" data-target="3">0</span>
             </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+18603261886" class="contact-link">+1 (860) 326-1886</a>
+            <div class="metric-label">Patents</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-value">
+              <span class="counter" data-target="2">0</span>
             </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="Jan, 1990">Jan, 1990</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Foster City, CA</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-	  <!--
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-		  
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-		  
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-			
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-		  
-        </ul>
-
-      </nav>
-	  -->
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-		  I am currently a Senior Human Machine Interface Researcher at Audi of America, Advanced Driver Assistance Systems, based in San Jose, CA. My role encompasses the entire lifecycle of user studies, from design and execution to analysis and reporting of relevant findings to stakeholders (Audi AG, Porsche AG). I work closely with cross-functional teams to translate research insights into system requirements, ensuring alignment with safety, usability, and regulatory standards. Currently, my research focus centers on evaluating the safety and usability of both semi-autonomous and fully autonomous vehicles.
-		  </p>
-		  <p>
-		  My academic background lies in Computer Science and Mathematics, with a research focus on <b>Human-Computer Interaction (HCI)</b>. 
-		  Over the past 5+ years, I have conducted extensive research across diverse domains. These include investigating human interactions in 
-		  physically immersive spaces, studying group dynamics in smart environments, and enhancing in-vehicle usability for semi to fully autonomous vehicles.
-		  </p>
-		  <p>
-		  Within the realm of automotive Human-Machine Interface (HMI), I have also delved into topics related to <b>Psychophysics</b>. 
-		  This involves <b>quantifying human perception metrics for stimuli</b> commonly employed as feedback mechanisms for drivers. 
-		  For instance, I’ve explored haptic feedback via the steering wheel to provide timely warnings about proximity to road edges.
-		  </p>
-		  <p>
-		  Please find my Resume below:
-		  <p>
-		  <p>
-		  <a href="./assets/resume/GSharma_Resume.pdf" target="_blank" class="resume-button">GSharma Resume</a>
-		  </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">Recent projects</h3>
-
-          <ul class="service-list">
-		  
-		  <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/real_drive_study.jpg
-                " alt="design icon" width="280">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Real Drive User Studies</h4>
-
-                <p class="service-item-text">
-                  Test custom HMI prototypes with real users to provide stakeholders with data-driven insights before series production. Given the safety requirements, we conduct high-risk evaluations at specialized facilities like the Nevada Automotive Test Center.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/rumble_strip.png
-                " alt="design icon" width="280">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Audio haptic Asynchrony</h4>
-
-                <p class="service-item-text">
-                  Investigated the detection threshold (DT) for asynchrony between audio and haptic feedback in a driving context using a force feedback steering wheel (Sensodrive).
-                </p>
-				<a href="https://arxiv.org/pdf/2307.05451.pdf" target="_blank" class="resume-button">PDF</a>
-              </div>
-
-            </li>
-			
-			<li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/continuous_feedback.png
-                " alt="design icon" width="280">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Haptic Lateral Assistance</h4>
-
-                <p class="service-item-text">
-                  Investigated the acceptance of continuous visual feedback for lateral assistance systems in cars, combining the simulated Head-Up Display (HUD) with 
-				  haptic feedback.
-                </p>
-				<a href="https://arxiv.org/pdf/2301.10933.pdf" target="_blank" class="resume-button">PDF</a>
-              </div>
-
-            </li>
-			<li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/portobello.png
-                " alt="design icon" width="280">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Driving Simulation</h4>
-
-                <p class="service-item-text">
-                  Collaborative project with Cornell university investigating extension of driving simulation from laboratory to in-vehicle road studies.
-                </p>
-				<a href="https://arxiv.org/pdf/2402.08061.pdf" target="_blank" class="resume-button">PDF</a>
-              </div>
-
-            </li>
-			<li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/immersive.png
-                " alt="design icon" width="280">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Immersive Interactions</h4>
-
-                <p class="service-item-text">
-                  Investigated the usability of multi-person interactions with a large screen using their smartphones and voice, 
-				  coupled with spatial information about their physical locations.
-                </p>
-				<a href="https://link.springer.com/chapter/10.1007/978-3-030-55190-2_22" target="_blank" class="resume-button">Springer</a> <a href="https://bit.ly/2ZLNhY9" target="_blank" class="resume-button">Video</a>
-              </div>
-
-            </li>
-			<li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/multimodal.png
-                " alt="design icon" width="280">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Multimodal Data and Interactions</h4>
-
-                <p class="service-item-text">
-                  Review paper on exploring various facets of tools, technologies and approaches of multimodal data research in the field of dynamic group interactions. 
-                </p>
-				<a href="https://arxiv.org/ftp/arxiv/papers/2401/2401.15194.pdf" target="_blank" class="resume-button">PDF</a>
-              </div>
-
-            </li>
-			
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials
-        -->
-		<!--
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-		-->
-        <!--
-          - testimonials modal
-        -->
-		<!--
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
+            <div class="metric-label">Companies</div>
+          </div>
         </div>
-		-->
 
-        <!--
-          - clients
-        -->
-
-        <section class="Affiliations">
-
-          <h3 class="h3 clients-title">Affiliations - Past and Present</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/audi.jpg" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/woven.jpg" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/tri.jpg" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/northeastern.jpg" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/rpi.jpg" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/conn.jpg" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">University school of the arts</h4>
-
-              <span>2007 — 2008</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">New york academy of art</h4>
-
-              <span>2006 — 2007</span>
-
-              <p class="timeline-text">
-                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-                omnis..
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">High school of art and design</h4>
-
-              <span>2002 — 2004</span>
-
-              <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Creative director</h4>
-
-              <span>2015 — Present</span>
-
-              <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Art director</h4>
-
-              <span>2013 — 2015</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web designer</h4>
-
-              <span>2010 — 2013</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Graphic design</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Branding</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-	  <!--
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-	  -->
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-	  <!--
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d70591.74444599453!2d-122.30542734928926!3d37.54357423748343!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f993c86aba381%3A0x5d395741532b924!2sFoster%20City%2C%20CA%2094404!5e0!3m2!1sen!2sus!4v1710017209532!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-				width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-	  -->
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary">View Research ↓</a>
+          <a href="assets/resume/GSharma_Resume.pdf" target="_blank" class="btn-secondary">⬇ Download Resume</a>
+        </div>
+      </div>
+
+      <!-- Right: Orbital Visual -->
+      <div class="hero-visual">
+        <div class="orbit orbit-1"></div>
+        <div class="orbit orbit-2"></div>
+        <div class="orbit orbit-3"></div>
+
+        <img
+          src="assets/images/gsharma.jpg"
+          alt="Gyanendra Sharma, PhD"
+          class="hero-profile"
+          onerror="this.style.display='none'; document.getElementById('hero-initials').style.display='flex';">
+        <div class="hero-profile-placeholder" id="hero-initials" style="display:none;">GS</div>
+
+        <!-- Floating info badges -->
+        <div class="hero-float-badge hfb-1">
+          <div class="hfb-title">Current Role</div>
+          <div class="hfb-value">Audi of America</div>
+        </div>
+        <div class="hero-float-badge hfb-2">
+          <div class="hfb-title">Research Focus</div>
+          <div class="hfb-value">ADAS &amp; HMI</div>
+        </div>
+      </div>
 
     </div>
 
-  </main>
+    <!-- Scroll hint -->
+    <div class="hero-scroll">
+      <span class="hero-scroll-text">Scroll</span>
+      <div class="scroll-mouse"><div class="scroll-dot"></div></div>
+    </div>
+  </section>
 
 
+  <!-- ==================== ABOUT ==================== -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- Image -->
+        <div class="about-img-col reveal-left">
+          <div class="about-img-frame">
+            <img src="assets/images/gsharma.jpg" alt="Gyanendra Sharma, PhD">
+          </div>
+          <div class="about-stat-card">
+            <div class="about-stat-num">7+</div>
+            <div class="about-stat-lbl">Years UX/HMI Research</div>
+          </div>
+        </div>
+
+        <!-- Text -->
+        <div class="about-text-col reveal-right">
+          <span class="label">About Me</span>
+          <h2 class="section-title">Bridging Humans &amp; Machine Systems</h2>
+
+          <div class="about-bio">
+            <p>I am a <strong>Senior Human Machine Interface (HMI) Researcher at Audi of America</strong>, Advanced Driver Assistance Systems, based in San Jose, CA. My work encompasses the full lifecycle of user research — from study design and execution to statistical analysis and stakeholder-ready reporting for Audi AG and Porsche AG.</p>
+
+            <p>My academic background spans <strong>Computer Science and Mathematics</strong> with a doctoral research focus on Human-Computer Interaction at Rensselaer Polytechnic Institute. Over 7+ years of industry and academic research, I have conducted rigorous studies across automotive HMI, psychophysics, immersive environments, and group dynamics.</p>
+
+            <p>Some of my previous work includes <strong>psychophysical methods</strong> to quantify human perception of haptic and audio feedback in driving contexts — from haptic lateral assistance systems to detection thresholds for audio-haptic asynchrony in force-feedback steering wheels. My research directly shapes ADAS product design at the OEM level.</p>
+          </div>
+
+          <div class="expertise-grid">
+            <div class="exp-item reveal delay-1">
+              <span class="exp-item-icon">🚗</span>
+              <span>Automotive HMI &amp; ADAS Research</span>
+            </div>
+            <div class="exp-item reveal delay-2">
+              <span class="exp-item-icon">🧠</span>
+              <span>Psychophysics &amp; Perception Studies</span>
+            </div>
+            <div class="exp-item reveal delay-3">
+              <span class="exp-item-icon">📊</span>
+              <span>Quantitative &amp; Mixed-Methods Research</span>
+            </div>
+            <div class="exp-item reveal delay-4">
+              <span class="exp-item-icon">👁</span>
+              <span>Eye-Tracking &amp; Behavioral Analysis</span>
+            </div>
+            <div class="exp-item reveal delay-5">
+              <span class="exp-item-icon">🔬</span>
+              <span>Real Drive &amp; Simulation Studies</span>
+            </div>
+            <div class="exp-item reveal delay-1">
+              <span class="exp-item-icon">📋</span>
+              <span>Stakeholder Research Communication</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Affiliations -->
+      <div class="affiliations-section reveal">
+        <p class="affiliations-label">Past &amp; Present Affiliations</p>
+        <div class="affiliations-row">
+          <img src="assets/images/audi.jpg" alt="Audi of America" class="affil-logo" title="Audi of America"
+            onerror="this.outerHTML='<span class=\'affil-text\'>Audi of America</span>'">
+          <img src="assets/images/woven.jpg" alt="Woven Planet" class="affil-logo" title="Woven Planet (Toyota)"
+            onerror="this.outerHTML='<span class=\'affil-text\'>Woven Planet</span>'">
+          <img src="assets/images/tri.jpg" alt="Toyota Research Institute" class="affil-logo" title="Toyota Research Institute"
+            onerror="this.outerHTML='<span class=\'affil-text\'>Toyota Research Institute</span>'">
+          <img src="assets/images/northeastern.jpg" alt="Northeastern University" class="affil-logo" title="Northeastern University"
+            onerror="this.outerHTML='<span class=\'affil-text\'>Northeastern University</span>'">
+          <img src="assets/images/rpi.jpg" alt="Rensselaer Polytechnic" class="affil-logo" title="Rensselaer Polytechnic Institute"
+            onerror="this.outerHTML='<span class=\'affil-text\'>RPI</span>'">
+          <img src="assets/images/conn.jpg" alt="Connecticut College" class="affil-logo" title="Connecticut College"
+            onerror="this.outerHTML='<span class=\'affil-text\'>Connecticut College</span>'">
+        </div>
+      </div>
+
+    </div>
+  </section>
 
 
+  <!-- ==================== EXPERIENCE ==================== -->
+  <section id="experience">
+    <div class="container">
+      <div class="exp-layout">
+
+        <!-- Timeline -->
+        <div>
+          <span class="label reveal">Work Experience</span>
+          <h2 class="section-title reveal">Professional <span>Journey</span></h2>
+          <p class="section-sub reveal">A track record of rigorous user research across leading automotive and academic environments.</p>
+
+          <div class="timeline">
+
+            <!-- Audi -->
+            <div class="tl-item reveal">
+              <div class="tl-dot active"></div>
+              <div class="tl-head">
+                <div>
+                  <div class="tl-role">Senior HMI Researcher</div>
+                  <div class="tl-company">Audi of America — ADAS, San Jose, CA</div>
+                </div>
+                <span class="tl-period">2023 — Present</span>
+              </div>
+              <ul class="tl-bullets">
+                <li>Conducted mixed-methods research on the usability, acceptance, and situational awareness of hands-free driving systems, leveraging user interviews and inferential statistics to generate actionable insights for production ADAS.</li>
+                <li>Presented key research findings to stakeholders at Audi AG and Porsche AG through workshops, directly influencing ADAS product decisions and Level 2+ system HMI requirements.</li>
+                <li>Led eye-tracking instrumentation and analysis using Smart Eye Pro to assess driver attention and behavior in real-world studies at specialized facilities including the Nevada Automotive Test Center.</li>
+                <li>Consolidated HMI requirements for automated vehicle platforms through user research, regulatory exploration, and data analysis for the North American market.</li>
+              </ul>
+            </div>
+
+            <!-- Toyota / Woven -->
+            <div class="tl-item reveal">
+              <div class="tl-dot"></div>
+              <div class="tl-head">
+                <div>
+                  <div class="tl-role">HMI Researcher</div>
+                  <div class="tl-company">Toyota Research Institute / Woven Planet, NA</div>
+                </div>
+                <span class="tl-period">2021 — 2023</span>
+              </div>
+              <ul class="tl-bullets">
+                <li>Designed and executed a within-subject A/B testing study using a tabletop driving simulator to evaluate user perception and acceptance of continuous steering guidance systems with HUD visual feedback.</li>
+                <li>Conducted a psychophysical experiment to determine detection thresholds of audio-haptic asynchrony in force-feedback steering wheels, directly informing ADAS interaction design and timing standards.</li>
+                <li>Applied psychophysics-based modeling (MLDS) to evaluate vibration warning perception in force-feedback steering, revealing a linear perceptual relationship to optimize haptic feedback for drivers.</li>
+              </ul>
+            </div>
+
+            <!-- Northeastern -->
+            <div class="tl-item reveal">
+              <div class="tl-dot"></div>
+              <div class="tl-head">
+                <div>
+                  <div class="tl-role">Postdoctoral Researcher</div>
+                  <div class="tl-company">Network Science Institute, Northeastern University</div>
+                </div>
+                <span class="tl-period">2019 — 2020</span>
+              </div>
+              <ul class="tl-bullets">
+                <li>Analyzed leadership dynamics in small group interactions by applying advanced statistical methods (regressions, multi-level modeling) to verbal and non-verbal behavioral data.</li>
+                <li>Synthesized research trends through a comprehensive meta-study on multimodal communication, identifying key gaps and future research directions in small group interaction research.</li>
+              </ul>
+            </div>
+
+            <!-- RPI -->
+            <div class="tl-item reveal">
+              <div class="tl-dot"></div>
+              <div class="tl-head">
+                <div>
+                  <div class="tl-role">PhD Researcher</div>
+                  <div class="tl-company">Rensselaer Polytechnic Institute</div>
+                </div>
+                <span class="tl-period">2014 — 2019</span>
+              </div>
+              <ul class="tl-bullets">
+                <li>Developed a multi-person tracking system using camera arrays to capture real-time location and orientation data, enabling research on interactive spatial computing in large immersive environments.</li>
+                <li>Evaluated usability and workload of multimodal interaction (voice, gestures, mobile) through human-subject experiments in large immersive environments using validated psychometric instruments.</li>
+                <li>Prototyped and iteratively designed user-to-smart-room interactions through pilot studies with diverse input methods (mobile, LeapMotion, voice, gestures) to refine interactive spatial experiences.</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div>
+          <span class="label reveal">Education</span>
+          <h2 class="section-title reveal">Academic <span>Background</span></h2>
+          <p class="section-sub reveal" style="margin-bottom:1rem;">Combining rigorous Computer Science foundations with deep Human-Computer Interaction research expertise.</p>
+
+          <div class="edu-cards">
+            <div class="edu-card reveal">
+              <span class="edu-degree-tag">Doctor of Philosophy</span>
+              <div class="edu-title">Computer Science</div>
+              <div class="edu-school">Rensselaer Polytechnic Institute</div>
+              <div class="edu-period">2014 – 2019</div>
+              <div class="edu-thesis">
+                <strong>Thesis:</strong> Spatially Aware Interactions in Large Scale Immersive Environments<br>
+                <strong>Research Area:</strong> Human-Computer Interaction, Spatial Computing, Multimodal Interfaces
+              </div>
+            </div>
+
+            <div class="edu-card reveal">
+              <span class="edu-degree-tag">Bachelor of Arts</span>
+              <div class="edu-title">Mathematics &amp; Computer Science</div>
+              <div class="edu-school">Connecticut College</div>
+              <div class="edu-period">2009 – 2013</div>
+            </div>
+          </div>
+
+          <!-- Quick stats cards -->
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-top:1.5rem;">
+            <div class="edu-card reveal delay-1" style="text-align:center;">
+              <div style="font-family:var(--font-serif); font-size:2rem; font-weight:700; background:var(--grad-primary); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; line-height:1; margin-bottom:0.3rem;">9</div>
+              <div style="font-size:0.75rem; color:var(--text-400); font-weight:500;">Peer-Reviewed Publications</div>
+            </div>
+            <div class="edu-card reveal delay-2" style="text-align:center;">
+              <div style="font-family:var(--font-serif); font-size:2rem; font-weight:700; background:var(--grad-gold); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; line-height:1; margin-bottom:0.3rem;">3</div>
+              <div style="font-size:0.75rem; color:var(--text-400); font-weight:500;">Patents (US &amp; PCT)</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
 
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
+  <!-- ==================== RESEARCH PROJECTS ==================== -->
+  <section id="projects">
+    <div class="container">
+      <span class="label reveal">Research Portfolio</span>
+      <h2 class="section-title reveal">Selected <span>Research</span></h2>
+      <p class="section-sub reveal">Peer-reviewed studies spanning automotive HMI, psychophysics, and immersive human-computer interaction. Click <em>Key Contributions</em> on each project to view detailed research outcomes.</p>
 
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <div class="filter-row reveal">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="automotive">Automotive HMI</button>
+        <button class="filter-btn" data-filter="immersive">Immersive HCI</button>
+        <button class="filter-btn" data-filter="review">Survey &amp; Review</button>
+      </div>
 
+      <div class="projects-grid">
+
+        <!-- ── Project 1: Real Drive Studies ── -->
+        <div class="project-card reveal" data-category="automotive">
+          <div class="proj-img p-automotive">
+            <img src="assets/images/real_drive_study.jpg" alt="Real Drive User Studies" loading="lazy"
+              onerror="this.style.display='none'">
+            <div class="proj-img-icon">🚗</div>
+            <div class="proj-img-overlay"></div>
+            <span class="proj-badge">Automotive HMI</span>
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">Real Drive User Studies — ADAS Prototype Evaluation</h3>
+            <p class="proj-desc">High-fidelity evaluation of custom HMI prototypes with real participants at specialized facilities including the Nevada Automotive Test Center. Studies assess usability, situational awareness, and acceptance of hands-free and Level 2+ ADAS at speed.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Real Drive</span>
+              <span class="proj-tag">Eye Tracking</span>
+              <span class="proj-tag">Smart Eye Pro</span>
+              <span class="proj-tag">ADAS</span>
+              <span class="proj-tag">Mixed-Methods</span>
+              <span class="proj-tag">Audi / Porsche</span>
+            </div>
+
+            <!-- Contributions accordion -->
+            <div class="proj-contrib-section">
+              <button class="proj-contrib-toggle" aria-expanded="false">
+                <span>▸ Key Contributions &amp; Skills</span>
+                <span class="contrib-arrow">▼</span>
+              </button>
+              <div class="proj-contrib-body">
+                <ul class="contrib-list">
+                  <li>Led end-to-end real-drive user research at the Nevada Automotive Test Center, managing the complete study lifecycle from IRB protocol design to final stakeholder reporting for Audi Level 2+ ADAS systems.</li>
+                  <li>Instrumented research vehicles with Smart Eye Pro eye-tracking to capture high-fidelity gaze patterns, attention allocation, and behavioral indicators of situational awareness in naturalistic driving at speed.</li>
+                  <li>Designed comprehensive mixed-methods protocols combining behavioral observation, semi-structured post-drive interviews, think-aloud techniques, and validated scales (SUS, UMUX-Lite, Van der Laan Acceptance).</li>
+                  <li>Applied inferential statistics (ANOVA, t-tests, regression) to eye-tracking and self-report data, extracting insights on trust calibration and driver acceptance of hands-free driving systems.</li>
+                  <li>Delivered stakeholder workshops and research briefings directly to Audi AG and Porsche AG engineering and product teams in Germany, influencing ADAS HMI requirements for production vehicles.</li>
+                  <li>Contributed to HMI requirements documentation for next-generation automated vehicle platforms, incorporating analysis of the North American regulatory landscape (SAE Levels, NHTSA guidelines).</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="proj-links">
+              <span class="proj-link conf-only">🔒 Audi Confidential</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Project 2: Audio-Haptic Asynchrony ── -->
+        <div class="project-card reveal" data-category="automotive">
+          <div class="proj-img p-psycho">
+            <img src="assets/images/rumble_strip.png" alt="Audio-Haptic Asynchrony Study" loading="lazy"
+              onerror="this.style.display='none'">
+            <div class="proj-img-icon">🎧</div>
+            <div class="proj-img-overlay"></div>
+            <span class="proj-badge">Psychophysics</span>
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">Detection Threshold of Audio-Haptic Asynchrony in a Driving Context</h3>
+            <p class="proj-desc">Investigated the perceptual detection threshold (DT) for temporal asynchrony between audio and haptic feedback in a Sensodrive force-feedback steering wheel. Results directly inform ADAS multimodal feedback timing standards.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Psychophysics</span>
+              <span class="proj-tag">Haptic Feedback</span>
+              <span class="proj-tag">Driving Simulator</span>
+              <span class="proj-tag">MLDS</span>
+              <span class="proj-tag">arXiv 2023</span>
+            </div>
+
+            <div class="proj-contrib-section">
+              <button class="proj-contrib-toggle" aria-expanded="false">
+                <span>▸ Key Contributions &amp; Skills</span>
+                <span class="contrib-arrow">▼</span>
+              </button>
+              <div class="proj-contrib-body">
+                <ul class="contrib-list">
+                  <li>Formulated and experimentally tested the open hypothesis of whether drivers can reliably detect millisecond-level temporal asynchrony between audio and haptic ADAS feedback cues.</li>
+                  <li>Engineered a controlled psychophysical paradigm using a Sensodrive force-feedback steering wheel, delivering precisely timed audio-haptic stimulus pairs under realistic simulated driving conditions.</li>
+                  <li>Applied Maximum Likelihood Difference Scaling (MLDS) — a Bayesian psychophysical scaling method — to derive detection threshold estimates with full statistical confidence intervals.</li>
+                  <li>Established empirical detection threshold values (in milliseconds) defining the minimum synchrony window for multimodal ADAS alerts, providing a quantitative design specification for real-time haptic-audio rendering.</li>
+                  <li>Results revealed drivers are more sensitive to audio-haptic asynchrony than prior literature suggested, directly setting new timing requirements for production ADAS haptic-alert architectures.</li>
+                  <li>Published as a peer-reviewed preprint (arXiv:2307.05451), contributing foundational psychophysical benchmarks to the automotive HCI and ADAS multimodal interface design community.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="proj-links">
+              <a href="https://arxiv.org/pdf/2307.05451.pdf" target="_blank" class="proj-link pdf">↗ arXiv PDF</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Project 3: Haptic Lateral Assistance ── -->
+        <div class="project-card reveal" data-category="automotive">
+          <div class="proj-img p-automotive">
+            <img src="assets/images/continuous_feedback.png" alt="Haptic Lateral Assistance Study" loading="lazy"
+              onerror="this.style.display='none'">
+            <div class="proj-img-icon">🎮</div>
+            <div class="proj-img-overlay"></div>
+            <span class="proj-badge">Automotive HMI</span>
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">Continuous Visual Feedback for Haptic Lateral Assistance</h3>
+            <p class="proj-desc">Investigated user acceptance of continuous visual risk feedback for lateral assistance systems, combining a simulated Head-Up Display (HUD) with haptic steering feedback. Within-subject A/B test on a tabletop driving simulator.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Lateral Assist</span>
+              <span class="proj-tag">HUD Design</span>
+              <span class="proj-tag">A/B Testing</span>
+              <span class="proj-tag">Usability</span>
+              <span class="proj-tag">NASA-TLX</span>
+              <span class="proj-tag">arXiv 2023</span>
+            </div>
+
+            <div class="proj-contrib-section">
+              <button class="proj-contrib-toggle" aria-expanded="false">
+                <span>▸ Key Contributions &amp; Skills</span>
+                <span class="contrib-arrow">▼</span>
+              </button>
+              <div class="proj-contrib-body">
+                <ul class="contrib-list">
+                  <li>Developed a novel HMI prototype combining a simulated HUD rendering continuous real-time risk visualization with haptic torque guidance in a lateral lane-keeping assistance system.</li>
+                  <li>Designed and executed a rigorous within-subject A/B controlled experiment on a tabletop driving simulator, directly comparing haptic-only vs. haptic + continuous visual risk feedback conditions.</li>
+                  <li>Administered the Van der Laan Acceptance Scale, System Usability Scale (SUS), and NASA Task Load Index (NASA-TLX) to quantify acceptance, usability, and cognitive workload.</li>
+                  <li>Conducted and coded think-aloud protocol sessions; applied thematic analysis and affinity mapping to surface qualitative insights on user mental models of lateral assist behavior.</li>
+                  <li>Demonstrated statistically significant improvements in user acceptance and usability for the HUD+haptic condition, while cognitive workload remained stable — validating the integrated HMI design approach.</li>
+                  <li>Findings directly informed HMI design recommendations for continuous guidance displays in Toyota Research Institute / Woven Planet ADAS prototypes, contributing to product design decisions.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="proj-links">
+              <a href="https://arxiv.org/pdf/2301.10933.pdf" target="_blank" class="proj-link pdf">↗ arXiv PDF</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Project 4: Lab to Road ── -->
+        <div class="project-card reveal" data-category="automotive">
+          <div class="proj-img p-automotive">
+            <img src="assets/images/portobello.png" alt="Driving Simulation Lab to Road" loading="lazy"
+              onerror="this.style.display='none'">
+            <div class="proj-img-icon">🛣</div>
+            <div class="proj-img-overlay"></div>
+            <span class="proj-badge">Automotive HMI</span>
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">Extending Driving Simulation from Lab to the Road</h3>
+            <p class="proj-desc">Collaborative project with Cornell University investigating the ecological validity of driving simulation studies — systematically comparing controlled lab environments to in-vehicle real-world road conditions. Published at ACM CHI 2024.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Ecological Validity</span>
+              <span class="proj-tag">CHI 2024</span>
+              <span class="proj-tag">Mixed-Methods</span>
+              <span class="proj-tag">External Validity</span>
+              <span class="proj-tag">Cornell Collaboration</span>
+            </div>
+
+            <div class="proj-contrib-section">
+              <button class="proj-contrib-toggle" aria-expanded="false">
+                <span>▸ Key Contributions &amp; Skills</span>
+                <span class="contrib-arrow">▼</span>
+              </button>
+              <div class="proj-contrib-body">
+                <ul class="contrib-list">
+                  <li>Co-designed parallel experimental protocols with Cornell University enabling systematic, head-to-head comparison of tabletop driving simulator vs. real-world on-road study environments.</li>
+                  <li>Coordinated multi-site data collection across simulation lab and real-world road conditions, managing participant logistics, IRB compliance, and rigorous data quality assurance across both environments.</li>
+                  <li>Synthesized behavioral, eye-tracking, and self-report data across environments using mixed-effects modeling and statistical equivalence testing to assess methodological transferability.</li>
+                  <li>Identified specific task conditions and behavioral metrics where simulator findings reliably generalize to on-road driving — and where they critically diverge — providing actionable guidance for study design.</li>
+                  <li>Accepted at ACM CHI 2024 — the world's premier Human-Computer Interaction conference — demonstrating research impact at the highest academic level in HCI and user research.</li>
+                  <li>Findings provide evidence-based guidelines for the UX and HMI research community on when and how to design externally valid driving simulation studies.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="proj-links">
+              <a href="https://arxiv.org/pdf/2402.08061.pdf" target="_blank" class="proj-link pdf">↗ arXiv PDF</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Project 5: Immersive Interactions ── -->
+        <div class="project-card reveal" data-category="immersive">
+          <div class="proj-img p-immersive">
+            <img src="assets/images/immersive.png" alt="Multi-Person Spatial Interaction" loading="lazy"
+              onerror="this.style.display='none'">
+            <div class="proj-img-icon">🖥</div>
+            <div class="proj-img-overlay"></div>
+            <span class="proj-badge">Immersive HCI</span>
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">Multi-Person Spatial Interaction in Large Immersive Displays</h3>
+            <p class="proj-desc">Investigated multi-person collaborative interaction with a large-scale immersive display using smartphones as touchpads, voice commands, and spatial location awareness. Published in Springer IntelliSys proceedings.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Spatial HCI</span>
+              <span class="proj-tag">Multi-User</span>
+              <span class="proj-tag">Springer 2021</span>
+              <span class="proj-tag">Usability</span>
+              <span class="proj-tag">Camera Arrays</span>
+            </div>
+
+            <div class="proj-contrib-section">
+              <button class="proj-contrib-toggle" aria-expanded="false">
+                <span>▸ Key Contributions &amp; Skills</span>
+                <span class="contrib-arrow">▼</span>
+              </button>
+              <div class="proj-contrib-body">
+                <ul class="contrib-list">
+                  <li>Designed and developed a real-time multi-person location and orientation tracking system using camera arrays in the CRAIVE-Lab, a human-scale immersive display environment at RPI.</li>
+                  <li>Engineered multiple collaborative interaction prototypes for large-display control: smartphone-as-touchpad, voice command, LeapMotion gesture, and full-body spatial positioning modalities.</li>
+                  <li>Conducted controlled human-subjects experiments with groups of 2–4 participants, evaluating interaction efficiency, group collaboration dynamics, and usability across all modalities.</li>
+                  <li>Applied SUS, task completion time, error rate analysis, and qualitative coding to identify usability bottlenecks; iterated through multiple design cycles using human-centered methods.</li>
+                  <li>Demonstrated that smartphone-as-touchpad achieved highest usability scores and supported simultaneous multi-user control — a key design finding for collaborative spatial and smart space interfaces.</li>
+                  <li>Published in Springer IntelliSys 2021 proceedings; findings contributed to PCT patent (PCT/US2022/051474) on multi-sensor immersive virtual environment systems.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="proj-links">
+              <a href="https://link.springer.com/chapter/10.1007/978-3-030-55190-2_22" target="_blank" class="proj-link paper">↗ Springer</a>
+              <a href="https://bit.ly/2ZLNhY9" target="_blank" class="proj-link video">▶ Video</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Project 6: Multimodal Survey ── -->
+        <div class="project-card reveal" data-category="review">
+          <div class="proj-img p-review">
+            <img src="assets/images/multimodal.png" alt="Multimodal Data Survey" loading="lazy"
+              onerror="this.style.display='none'">
+            <div class="proj-img-icon">📑</div>
+            <div class="proj-img-overlay"></div>
+            <span class="proj-badge">Survey &amp; Review</span>
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">Multimodal Data &amp; Interactions in Group Communication Research</h3>
+            <p class="proj-desc">Comprehensive review paper exploring tools, technologies, and methodological approaches for multimodal data research in dynamic group interactions — spanning audio, video, physiological, and behavioral modalities.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Multimodal</span>
+              <span class="proj-tag">Group Dynamics</span>
+              <span class="proj-tag">Systematic Review</span>
+              <span class="proj-tag">arXiv 2024</span>
+            </div>
+
+            <div class="proj-contrib-section">
+              <button class="proj-contrib-toggle" aria-expanded="false">
+                <span>▸ Key Contributions &amp; Skills</span>
+                <span class="contrib-arrow">▼</span>
+              </button>
+              <div class="proj-contrib-body">
+                <ul class="contrib-list">
+                  <li>Conducted a systematic literature review covering 200+ publications at the intersection of multimodal sensing and group communication research, spanning audio, video, physiological (EEG, EDA), and behavioral modalities.</li>
+                  <li>Synthesized diverse methodological frameworks, sensing technologies (microphone arrays, cameras, biosensors, eye-trackers, motion capture), and analytical approaches into a coherent multi-disciplinary landscape.</li>
+                  <li>Developed a novel taxonomic classification system for multimodal data modalities, collection tools, and analytical methods — providing a structured reference framework for future researchers.</li>
+                  <li>Identified critical under-researched areas including real-world naturalistic multimodal capture, multi-person temporal fusion, and cross-cultural group dynamics, outlining a research agenda for the field.</li>
+                  <li>Co-authored with an interdisciplinary team from Northeastern University Network Science Institute, combining expertise from HCI, network science, communication research, and computational social science.</li>
+                  <li>Published as open-access preprint (arXiv:2401.15194), providing a comprehensive community resource for researchers at the intersection of multimodal sensing, AI, and human group interaction.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="proj-links">
+              <a href="https://arxiv.org/ftp/arxiv/papers/2401/2401.15194.pdf" target="_blank" class="proj-link pdf">↗ arXiv PDF</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== PUBLICATIONS & PATENTS ==================== -->
+  <section id="publications">
+    <div class="container">
+      <span class="label reveal">Scholarly Output</span>
+      <h2 class="section-title reveal">Publications &amp; <span>Patents</span></h2>
+
+      <div class="pub-layout">
+
+        <!-- Publications list -->
+        <div>
+          <p class="section-sub reveal" style="margin-bottom:2rem;">9 peer-reviewed publications spanning automotive HCI, psychophysics, and immersive computing.</p>
+
+          <div class="pub-list">
+
+            <div class="pub-item reveal">
+              <div class="pub-num">1</div>
+              <div class="pub-content">
+                <div class="pub-title">Extending Driving Simulation from Lab to the Road</div>
+                <div class="pub-authors">F. Bu, S. Li, <strong>G. Sharma</strong>, W. Ju, et al.</div>
+                <div class="pub-venue">ACM CHI Conference on Human Factors in Computing Systems, 2024</div>
+                <div class="pub-meta">
+                  <span class="pub-year">2024</span>
+                  <a href="https://arxiv.org/pdf/2402.08061.pdf" target="_blank" class="pub-pdf">↗ PDF</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="pub-item reveal">
+              <div class="pub-num">2</div>
+              <div class="pub-content">
+                <div class="pub-title">Multimodality in Group Communication Research: A Survey</div>
+                <div class="pub-authors">R. Lange, R. J. Radke, <strong>G. Sharma</strong>, et al.</div>
+                <div class="pub-venue">arXiv preprint arXiv:2401.15194, 2024</div>
+                <div class="pub-meta">
+                  <span class="pub-year">2024</span>
+                  <a href="https://arxiv.org/ftp/arxiv/papers/2401/2401.15194.pdf" target="_blank" class="pub-pdf">↗ PDF</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="pub-item reveal">
+              <div class="pub-num">3</div>
+              <div class="pub-content">
+                <div class="pub-title">Continuous Visual Feedback of Risk for Haptic Lateral Assistance</div>
+                <div class="pub-authors"><strong>G. Sharma</strong>, H. Yasuda, and M. Kuehner</div>
+                <div class="pub-venue">arXiv preprint arXiv:2301.10933, 2023</div>
+                <div class="pub-meta">
+                  <span class="pub-year">2023</span>
+                  <a href="https://arxiv.org/pdf/2301.10933.pdf" target="_blank" class="pub-pdf">↗ PDF</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="pub-item reveal">
+              <div class="pub-num">4</div>
+              <div class="pub-content">
+                <div class="pub-title">Detection Threshold of Audio-Haptic Asynchrony in a Driving Context</div>
+                <div class="pub-authors"><strong>G. Sharma</strong>, H. Yasuda, and M. Kuehner</div>
+                <div class="pub-venue">arXiv preprint arXiv:2307.05451, 2023</div>
+                <div class="pub-meta">
+                  <span class="pub-year">2023</span>
+                  <a href="https://arxiv.org/pdf/2307.05451.pdf" target="_blank" class="pub-pdf">↗ PDF</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="pub-item reveal">
+              <div class="pub-num">5</div>
+              <div class="pub-content">
+                <div class="pub-title">Multi-Person Spatial Interaction in a Large Immersive Display Using Smartphones as Touchpads</div>
+                <div class="pub-authors"><strong>G. Sharma</strong> and R. J. Radke</div>
+                <div class="pub-venue">Proceedings of IntelliSys 2020, Vol. 3, Springer, 2021, pp. 285–302</div>
+                <div class="pub-meta">
+                  <span class="pub-year">2021</span>
+                  <a href="https://link.springer.com/chapter/10.1007/978-3-030-55190-2_22" target="_blank" class="pub-pdf">↗ Springer</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="pub-item reveal">
+              <div class="pub-num">6</div>
+              <div class="pub-content">
+                <div class="pub-title">Occupant Location and Gesture Estimation in Large-Scale Immersive Spaces</div>
+                <div class="pub-authors">D. Jivani, <strong>G. Sharma</strong>, and R. J. Radke</div>
+                <div class="pub-venue">Living Labs Workshop, ACM CHI, 2018</div>
+                <div class="pub-meta"><span class="pub-year">2018</span></div>
+              </div>
+            </div>
+
+            <div class="pub-item reveal">
+              <div class="pub-num">7</div>
+              <div class="pub-content">
+                <div class="pub-title">Manipulating Screen Elements in an Immersive Environment with a Wrist-Mounted Device and Free Body Movement</div>
+                <div class="pub-authors"><strong>G. Sharma</strong>, D. Jivani, and R. Radke</div>
+                <div class="pub-venue">Living Labs Workshop, ACM CHI, 2018</div>
+                <div class="pub-meta"><span class="pub-year">2018</span></div>
+              </div>
+            </div>
+
+            <div class="pub-item reveal">
+              <div class="pub-num">8</div>
+              <div class="pub-content">
+                <div class="pub-title">Interactions in a Human-Scale Immersive Environment: The CRAIVE-Lab</div>
+                <div class="pub-authors"><strong>G. Sharma</strong>, J. Braasch, and R. J. Radke</div>
+                <div class="pub-venue">Cross-Surface 2016, ACM ISS, 2017</div>
+                <div class="pub-meta"><span class="pub-year">2017</span></div>
+              </div>
+            </div>
+
+            <div class="pub-item reveal">
+              <div class="pub-num">9</div>
+              <div class="pub-content">
+                <div class="pub-title">Bridging Printed Music and Audio Through Alignment Using a Mid-Level Score Representation</div>
+                <div class="pub-authors">Ö. Izmirli and <strong>G. Sharma</strong></div>
+                <div class="pub-venue">International Society for Music Information Retrieval (ISMIR), 2012, pp. 61–66</div>
+                <div class="pub-meta"><span class="pub-year">2012</span></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div style="margin-top:1.5rem;">
+            <a href="https://scholar.google.com/citations?hl=en&authuser=1&user=Sc_kZe4AAAAJ" target="_blank" class="btn-secondary" style="font-size:0.85rem; padding:0.7rem 1.5rem;">
+              🎓 View All on Google Scholar ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- Patents -->
+        <div>
+          <span class="label reveal">Intellectual Property</span>
+          <h2 class="section-title reveal" style="font-size:1.8rem;">Patents</h2>
+          <p class="section-sub reveal" style="margin-bottom:1rem;">Three granted and published patents spanning automotive safety systems and immersive spatial computing.</p>
+
+          <div class="patent-list">
+
+            <div class="patent-card reveal">
+              <div class="patent-year">2022 · US Patent Application</div>
+              <div class="patent-title">Systems and Methods for Enhancing Operator Vigilance</div>
+              <div class="patent-num">U.S. Pat. App. No. 18/095,286</div>
+              <div class="patent-inv">H. Yasuda, M. Kuehner, G. Sharma, et al.</div>
+            </div>
+
+            <div class="patent-card reveal">
+              <div class="patent-year">2022 · PCT International Application</div>
+              <div class="patent-title">Multi-Sensor Systems and Methods for Providing Immersive Virtual Environments</div>
+              <div class="patent-num">PCT/US2022/051474</div>
+              <div class="patent-inv">G. Sharma, J. Mathews, J. Braasch, R. J. Radke, D. Jivani</div>
+            </div>
+
+            <div class="patent-card reveal">
+              <div class="patent-year">2017 · US Patent Application</div>
+              <div class="patent-title">Hybrid Virtual and Physical Jewelry Shopping Experience</div>
+              <div class="patent-num">US2018/0357702A1</div>
+              <div class="patent-inv">G. Sharma, M. Nawhal, A. Prakash, et al.</div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== SKILLS ==================== -->
+  <section id="skills">
+    <div class="container">
+      <span class="label reveal">Capabilities</span>
+      <h2 class="section-title reveal">Skills &amp; <span>Expertise</span></h2>
+      <p class="section-sub reveal">A comprehensive research toolkit developed across academic, postdoctoral, and industry environments — targeted toward senior UX and HMI research roles.</p>
+
+      <div class="skills-grid">
+
+        <div class="skill-cat reveal">
+          <div class="skill-cat-head">
+            <div class="skill-cat-icon icon-blue">🔭</div>
+            <div class="skill-cat-title">Research Design &amp; Methodology</div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Experimental Design</span>
+            <span class="skill-tag">Within-Subjects</span>
+            <span class="skill-tag">Between-Subjects</span>
+            <span class="skill-tag">Psychophysical Methods</span>
+            <span class="skill-tag">Threshold Detection</span>
+            <span class="skill-tag">MLDS</span>
+            <span class="skill-tag">Pilot Studies</span>
+            <span class="skill-tag">Wizard-of-Oz</span>
+            <span class="skill-tag">A/B Testing</span>
+          </div>
+        </div>
+
+        <div class="skill-cat reveal">
+          <div class="skill-cat-head">
+            <div class="skill-cat-icon icon-blue">📈</div>
+            <div class="skill-cat-title">Quantitative Analysis</div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Regression Analysis</span>
+            <span class="skill-tag">ANOVA</span>
+            <span class="skill-tag">t-tests</span>
+            <span class="skill-tag">Multi-level Modeling</span>
+            <span class="skill-tag">Factor Analysis</span>
+            <span class="skill-tag">Likert Scaling</span>
+            <span class="skill-tag">Inferential Statistics</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">R</span>
+            <span class="skill-tag">MATLAB</span>
+          </div>
+        </div>
+
+        <div class="skill-cat reveal">
+          <div class="skill-cat-head">
+            <div class="skill-cat-icon icon-gold">🎯</div>
+            <div class="skill-cat-title">User Research Methods</div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Real Drive Studies</span>
+            <span class="skill-tag">Mixed-Methods</span>
+            <span class="skill-tag">In-Depth Interviews</span>
+            <span class="skill-tag">Usability Testing</span>
+            <span class="skill-tag">Think-Aloud Protocol</span>
+            <span class="skill-tag">Survey Design</span>
+            <span class="skill-tag">Qualtrics</span>
+            <span class="skill-tag">Thematic Coding</span>
+            <span class="skill-tag">Affinity Mapping</span>
+            <span class="skill-tag">Personas</span>
+          </div>
+        </div>
+
+        <div class="skill-cat reveal">
+          <div class="skill-cat-head">
+            <div class="skill-cat-icon icon-gold">👁</div>
+            <div class="skill-cat-title">Instrumentation &amp; Tools</div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Smart Eye Pro</span>
+            <span class="skill-tag">Eye Tracking</span>
+            <span class="skill-tag">Gaze Metrics</span>
+            <span class="skill-tag">Sensodrive Wheel</span>
+            <span class="skill-tag">Driving Simulator</span>
+            <span class="skill-tag">Raspberry Pi</span>
+            <span class="skill-tag">UserInterviews.com</span>
+            <span class="skill-tag">Camera Arrays</span>
+          </div>
+        </div>
+
+        <div class="skill-cat reveal">
+          <div class="skill-cat-head">
+            <div class="skill-cat-icon icon-green">🚗</div>
+            <div class="skill-cat-title">Automotive &amp; HMI Domain</div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">ADAS Systems</span>
+            <span class="skill-tag">Hands-Free Driving</span>
+            <span class="skill-tag">Haptic Feedback</span>
+            <span class="skill-tag">HUD Design</span>
+            <span class="skill-tag">Lateral Assist</span>
+            <span class="skill-tag">Situational Awareness</span>
+            <span class="skill-tag">Human Factors</span>
+            <span class="skill-tag">Safety Standards</span>
+            <span class="skill-tag">SAE Levels</span>
+          </div>
+        </div>
+
+        <div class="skill-cat reveal">
+          <div class="skill-cat-head">
+            <div class="skill-cat-icon icon-green">📢</div>
+            <div class="skill-cat-title">Communication &amp; Collaboration</div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Stakeholder Reporting</span>
+            <span class="skill-tag">Research Workshops</span>
+            <span class="skill-tag">Cross-functional Teams</span>
+            <span class="skill-tag">Requirements Translation</span>
+            <span class="skill-tag">Regulatory Compliance</span>
+            <span class="skill-tag">Academic Writing</span>
+            <span class="skill-tag">Technical Presentations</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== CONTACT ==================== -->
+  <section id="contact">
+    <div class="container">
+      <span class="label reveal">Get in Touch</span>
+
+      <div class="contact-grid">
+
+        <!-- Info -->
+        <div class="reveal-left">
+          <h2 class="contact-tagline">Let's Talk <span>Research</span></h2>
+          <p class="contact-desc">
+            I'm open to discussing new research opportunities, senior UX or HMI researcher roles, academic collaborations, and consulting engagements in automotive human factors and user research.
+          </p>
+
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon">✉</div>
+              <div>
+                <div class="contact-label">Email</div>
+                <a href="mailto:gyanendra.sharma870@gmail.com" class="contact-val">gyanendra.sharma870@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📞</div>
+              <div>
+                <div class="contact-label">Phone</div>
+                <a href="tel:+18603261886" class="contact-val">+1 (860) 326-1886</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <div class="contact-label">Location</div>
+                <div class="contact-val">Foster City, CA</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-row">
+            <a href="https://www.linkedin.com/in/gyanendrasharma70/" target="_blank" class="social-btn">
+              🔗 LinkedIn
+            </a>
+            <a href="https://scholar.google.com/citations?hl=en&authuser=1&user=Sc_kZe4AAAAJ" target="_blank" class="social-btn">
+              🎓 Google Scholar
+            </a>
+          </div>
+        </div>
+
+        <!-- CTA card -->
+        <div class="reveal-right">
+          <div class="contact-cta-card">
+            <div class="cta-header">
+              <div class="cta-icon">🔬</div>
+              <div class="cta-title">Open to Opportunities</div>
+            </div>
+            <p class="cta-desc">
+              Targeting senior roles in UX Research, HMI Research, and Human Factors — particularly in automotive, mobility, and emerging technology domains. Open to industry and research leadership positions.
+            </p>
+            <div class="avail-badge">
+              <div class="avail-dot"></div>
+              <div class="avail-text">
+                <strong>Available for new opportunities</strong><br>
+                Senior UX Researcher · HMI Researcher · Human Factors Specialist
+              </div>
+            </div>
+            <a href="mailto:gyanendra.sharma870@gmail.com" class="btn-cta-email">
+              ✉ Send an Email
+            </a>
+            <a href="https://www.linkedin.com/in/gyanendrasharma70/" target="_blank" class="btn-cta-linkedin">
+              🔗 Connect on LinkedIn
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">GS</div>
+      <p class="footer-copy">© 2025 Gyanendra Sharma, PhD · Senior HMI &amp; UX Researcher</p>
+      <div class="footer-links">
+        <a href="assets/resume/GSharma_Resume.pdf" target="_blank">Resume</a>
+        <a href="https://www.linkedin.com/in/gyanendrasharma70/" target="_blank">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?hl=en&authuser=1&user=Sc_kZe4AAAAJ" target="_blank">Scholar</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="assets/js/main.js"></script>
 </body>
-
 </html>
